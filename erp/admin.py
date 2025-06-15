@@ -8,7 +8,6 @@ class CustomerAdmin(admin.ModelAdmin):
     search_fields = ['name', 'email']
     list_filter = ['created_at']
 
-
 @admin.register(Deal)
 class DealAdmin(admin.ModelAdmin):
     list_display = ['name', 'customer', 'area', 'appointment_date', 'price', 'status']
